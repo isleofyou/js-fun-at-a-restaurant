@@ -13,15 +13,15 @@ var {
 describe("meal.js", function() {
   describe("nameMenuItem", function() {
     it("should be a function", function() {
-     assert.isFunction(nameMenuItem);
+      assert.isFunction(nameMenuItem);
     });
 
-    it("should take in a name and make a delicious name", function () {
+    it("should take in a name and make a delicious name", function() {
       var menuItemName = nameMenuItem("Pizza");
       assert.equal(menuItemName, "Delicious Pizza");
     });
 
-    it("should be able to create many delicious titles", function () {
+    it("should be able to create many delicious titles", function() {
       var burritoItem = nameMenuItem("Burrito");
       var sushiItem = nameMenuItem("Pizza");
       var tacoItem = nameMenuItem("Taco");
@@ -33,7 +33,7 @@ describe("meal.js", function() {
   });
 
   describe("createMenuItem", function() {
-    it("should be a function", function () {
+    it("should be a function", function() {
       assert.isFunction(createMenuItem);
     });
 
@@ -48,7 +48,7 @@ describe("meal.js", function() {
   });
 
   describe("addIngredients", function() {
-    it("should be a function", function () {
+    it("should be a function", function() {
       assert.isFunction(addIngredients);
     });
 
@@ -85,11 +85,11 @@ describe("meal.js", function() {
   })
 
   describe("formatPrice", function() {
-    it("should be a function", function () {
+    it("should be a function", function() {
       assert.isFunction(formatPrice);
     });
 
-    it("should add a dollar sign in front of the price", function () {
+    it("should add a dollar sign in front of the price", function() {
       var menuItemName = nameMenuItem("French Toast");
       var menuItem = createMenuItem(menuItemName, 10.99, "breakfast");
       var initialPrice = menuItem.price;
@@ -98,7 +98,7 @@ describe("meal.js", function() {
       assert.equal(formattedPrice, "$10.99")
     });
 
-    it("should add a dollar sign in front of a different price", function () {
+    it("should add a dollar sign in front of a different price", function() {
       var menuItemName = nameMenuItem("Carrot Cake");
       var menuItem = createMenuItem(menuItemName, 5.99, "dessert");
       var initialPrice = menuItem.price;
@@ -109,7 +109,7 @@ describe("meal.js", function() {
   });
 
   describe("decreasePrice", function() {
-    it("should be a function", function () {
+    it("should be a function", function() {
       assert.isFunction(decreasePrice);
     });
 
@@ -123,7 +123,7 @@ describe("meal.js", function() {
   })
 
   describe("createRecipe", function() {
-    it("should be a function", function () {
+    it("should be a function", function() {
       assert.isFunction(createRecipe);
     });
 
@@ -144,7 +144,7 @@ describe("meal.js", function() {
     });
 
 
-    it("should return a different recipe object", function () {
+    it("should return a different recipe object", function() {
       var ingredients = [];
       addIngredients("bread", ingredients);
       addIngredients("cheese", ingredients);
