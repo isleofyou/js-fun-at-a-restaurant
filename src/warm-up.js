@@ -68,7 +68,7 @@ if (isFavorite === true) {
 
 // Create a new variable "vegetables" and assign it to an Array of 5 different
 // vegetables, represented by their names as Strings.
-var vegetables = ["Onion", "Carrot","Celery","Pepper","Garlic"];
+var vegetables = ["Onion", "Carrot", "Celery", "Pepper", "Garlic"];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
@@ -76,7 +76,7 @@ vegetables[2];
 
 // Create a new variable "fruits" and assign it to an Array of 7
 // different fruits.
-var fruits = ["Apple","Cherry","Peach","Pomegranate","Watermelon","Coconut","Pineapple"];
+var fruits = ["Apple", "Cherry", "Peach", "Pomegranate", "Watermelon", "Coconut", "Pineapple"];
 
 // Write the code to access the 5th element of the array, using bracket notation.
 fruits[4];
