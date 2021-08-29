@@ -1,32 +1,32 @@
-function takeOrder (newOrder, deliveryOrders){
-  if (deliveryOrders.length < 3){
-  deliveryOrders.push(newOrder);
-  return deliveryOrders;
-} else {return deliveryOrders}
+function takeOrder(newOrder, deliveryOrders) {
+  if (deliveryOrders.length < 3) {
+    deliveryOrders.push(newOrder);
+  }
 }
 
-function refundOrder (refundNumber, deliveryOrders){
-  for (i = 0; i < deliveryOrders.length; i++){
-  if (deliveryOrders[i].orderNumber === refundNumber) {
-    deliveryOrders.splice([i],1);
-    return deliveryOrders;
+function refundOrder(refundNumber, deliveryOrders) {
+  for (i = 0; i < deliveryOrders.length; i++) {
+    if (deliveryOrders[i].orderNumber === refundNumber) {
+      deliveryOrders.splice([i], 1);
     }
   }
 }
 
-function listItems (deliveryOrders) {
+function listItems(deliveryOrders) {
   items = [];
-  for (var i = 0; i < deliveryOrders.length; i++){
+  for (var i = 0; i < deliveryOrders.length; i++) {
     items.push(deliveryOrders[i].item);
-  } return items.join(', ');
+  }
+  return items.join(', ');
 }
 
-function searchOrder (deliveryOrders, checkItem){
-  for (i = 0; i < deliveryOrders.length; i++){
-    if (deliveryOrders[i].item.includes(checkItem)){
-  return true;
+function searchOrder(deliveryOrders, checkItem) {
+  for (i = 0; i < deliveryOrders.length; i++) {
+    if (deliveryOrders[i].item.includes(checkItem)) {
+      return true;
     }
-  } return false;
+  }
+  return false;
 }
 module.exports = {
   takeOrder,
